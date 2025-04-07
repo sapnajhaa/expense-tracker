@@ -56,7 +56,7 @@ const BudgetFeed = () => {
     if (!expense || isNaN(expense) || Number(expense) <= 0) {
       setSnackbar({
         open: true,
-        message: "Please enter a valid expense amount and type",
+        message: "Please enter a valid positive expense amount and type",
         severity: "error",
       });
       return;
